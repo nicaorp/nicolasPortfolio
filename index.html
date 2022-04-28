@@ -8,13 +8,23 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
 
   <!--=======Scroll to top button=======-->
+  <div class="scrollToTop-btn flex-center">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
 
   <!--=======Light/Dark theme button=======-->
+
+    <div class="theme-btn flex-center">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </div>
 
   <!--=======Header=======-->
   <header>
@@ -22,7 +32,8 @@
       <a href="#" class="logo">Nicolas</a>
       <div class="navigation">
         <div class="nav-items">
-          <a href="#home">Home</a>
+          <div class="nav-close-btn"></div>
+          <a class="active" href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#services">Services</a>
@@ -30,6 +41,7 @@
           <a href="#contact">Contact</a>
         </div>
       </div>
+      <div class="nav-menu-btn"></div>
     </div>
   </header>
   <!--=======Home section=======-->
@@ -580,7 +592,7 @@
               <input type="text" placeholder="Subject">
             </div>
             <div class="third-row">
-              <textarea name="message" id=""rows="7" placeholder="Message"></textarea>
+              <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
             </div>
             <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
           </form>
@@ -590,7 +602,38 @@
   </div>
 
   <!--=======Footer=======-->
+  <footer>
+    <div class="footer-container">
+      <div class="about group">
+        <h2>Nicolas</h2>
+        <p>Back-end Developer</p>
+        <a href="#about">About me</a>
+      </div>
+      <div class="hr"></div>
+      <div class="info group">
+        <h3>More</h3>
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hr"></div>
+      <div class="follow group">
+        <h3>Follow</h3>
+        <ul>
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
 
+    </div>
+    <div class="footer-copyright group">
+      <p>2022 by Nicolas Ferreira. All rights reserved.</p>
+    </div>
+  </footer>
   <!--=======External scripts=======-->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
