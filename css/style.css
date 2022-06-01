@@ -170,7 +170,7 @@ header.sticky {
 .nav-bar {
   position: relative;
   height: calc(4rem +  1rem);
-  max-width: 1250px;
+  max-width: 1150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,7 +217,7 @@ header.sticky .nav-bar {
 .home {
   position: relative;
   max-width: 1250px;
-  min-width: 100vh;
+  min-width: 100vw;
   margin-top: 130px;
   margin-left: auto;
   margin-right: auto;
@@ -1108,8 +1108,13 @@ footer a {
 }
 
 /*=======Media query max-width 1070px=======*/
-@media screen and (max-width: 1070px){
+@media screen and (max-width: 1079px){
   /*=======Header navigation menu=======*/
+  
+
+
+
+
     .navigation {
       position: fixed;
       width: 100%;
@@ -1133,7 +1138,7 @@ footer a {
     .nav-items {
       position: relative;
       background: var(--modal-bg-color);
-      width: 600px;
+      width: 100%;
       max-width: 600px;
       display: flex;
       align-items: center;
@@ -1146,7 +1151,7 @@ footer a {
       transition: .3s ease;
     }
 
-    .navigation.active .nav-items {
+    .navigation.active .nav-items { 
       transform: translateY(0);
     }
 
@@ -1290,8 +1295,10 @@ footer .footer-container {
 /*=======Media query max-width 730px=======*/
 @media screen and (max-width: 730px){
   /*=======Common styles for all sections=======*/
+  
   body {
     margin: 5rem 0 0 0;
+    width: 100vw;
   }
 
   .section-title-01 {
@@ -1303,9 +1310,68 @@ footer .footer-container {
     transform: translateY(-65px);
   }
 
+  .flex-center {
+    
+    display: flex;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+  
+  .section {
+    position: relative;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 2rem 2rem;
+  }
+  
+  .sub-section {
+    position: relative;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 0;
+  }
+
+  /*=======Header=======*/
+header {
+  z-index: 99999;
+  max-width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  transition: .6s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
   /*=======Home section=======*/
-    .home .home-container {
+      
+
+  .nav-bar {
+    position: relative;
+    height: calc(4rem +  1rem);
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    transition: .6s ease;
+  }
+  
+  .home .home-container {
+    
       display: grid;
+      max-width: 100vw;
+      
+
     }
 
     .home-container .home-img {
@@ -1313,12 +1379,13 @@ footer .footer-container {
     }
 
     .home-container .home-img img {
-      width: 65%;
+      width: 60%;
       transform: translate(80px, -180px);
     }
 
     .home .home-container .info {
       font-size: 0.8rem;
+      
     }
 
     .media-icons {
@@ -1337,7 +1404,8 @@ footer .footer-container {
 
     .contact-card .contact-btn .btn {
       font-size: 0.8rem;
-      
+
     }
 
 }
+
