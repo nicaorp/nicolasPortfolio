@@ -1298,7 +1298,7 @@ footer .footer-container {
   
   body {
     margin: 5rem 0 0 0;
-    width: 100vw;
+    
   }
 
   .section-title-01 {
@@ -1349,9 +1349,21 @@ header {
   margin-right: auto;
 }
 
-
-  /*=======Home section=======*/
-      
+/*===========Navigation=======*/
+.navigation {
+  position: fixed;
+  max-width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--transparent-color-01);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease;
+}
 
   .nav-bar {
     position: relative;
@@ -1362,9 +1374,13 @@ header {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
+    padding: 0;
     transition: .6s ease;
   }
+
+  /*=======Home section=======*/
+      
+  
   
   .home .home-container {
     
@@ -1373,6 +1389,8 @@ header {
       
 
     }
+
+    
 
     .home-container .home-img {
       position: absolute;

@@ -160,15 +160,3 @@ ScrollReveal({
     duration: 2500,
     delay: 100    
     });
-
-//Target elements, and specify options to create reveal animations
-ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', { delay: 200, origin: 'left' });
-ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 300, origin: 'right' });
-ScrollReveal().reveal('.home .info .btn', { delay: 300, origin: 'bottom' });
-ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 400, origin: 'left', interval:200 });
-ScrollReveal().reveal('.home-img, .about-img', { delay: 300, origin: 'bottom' });
-ScrollReveal().reveal('.about .description, .contact-right', { delay: 400, origin: 'right' });
-ScrollReveal().reveal('.about .professional-list li', { delay: 300, origin: 'right', interval:200 });
-ScrollReveal().reveal('.skills-description, .services-description, .contact-card, .client-swiper, .contact-left h2', { delay: 400, origin: 'left'});
-ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card', { delay: 400, origin: 'bottom', interval: 200});
-ScrollReveal().reveal('footer .group', { delay: 300, origin: 'top', interval: 200});
